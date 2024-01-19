@@ -6,11 +6,37 @@
     <title>Biker Zone</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- tailwind customs -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#E76F51',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- Font family -->
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
-<body>  
-    <header>
+<body class="font-poppins">  
+
+    <!-- Header Section started -->
+
+    <header class="md:container md:mx-auto">
         <div class="navbar bg-base-100">
-            <div class="navbar-start">
+            <div class="flex-1">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -22,7 +48,7 @@
                         <li><a>About</a></li>
                     </ul>
               </div>
-              <a class="btn btn-ghost text-xl">Biker Zone</a>
+              <a class="btn btn-ghost text-4xl">Biker Zone</a>  
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
@@ -32,12 +58,15 @@
                     <li><a>About</a></li>
               </ul>
             </div>
-            <div class="navbar-end">
-                <button class="btn btn-error">Log In</button>
+            <div class="">
+                <button class="btn btn-primary border-none bg-primary-color text-white">Log In</button>
             </div>
           </div>
     </header>
-    <main>
+
+    <!-- Header Section Ended -->
+
+    <main class="md:container md:mx-auto">
 
     </main>
     <footer>
